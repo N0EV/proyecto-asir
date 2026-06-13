@@ -1,0 +1,38 @@
+# -- Secretos y Credenciales (¡CRUCIAL PARA CIBERSEGURIDAD!)
+*.pem
+*.key
+*.pub
+*.pfx
+*.pkcs11
+id_rsa
+id_ecdsa
+id_ed25519
+.env
+.env.*
+secrets.yaml
+credentials.json
+
+# -- Automatización e Infraestructura como Código (Ansible / Terraform)
+.terraform/
+*.tfstate
+*.tfstate.backup
+.vagrant/
+ansible_fact_cache/
+
+# -- Contenedores y Entornos Virtuales
+.docker/
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# -- Archivos del Sistema Operativo y Editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# -- Volúmenes de Datos Temporales (Evita subir Gigas de BD o Logs)
+*.log
+*.sqlite
+/data/
